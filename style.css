@@ -10,6 +10,7 @@ body{
     color: white;
 }
 
+/* add font-weights */
 h1, h2{
     font-weight: 900;
 }
@@ -22,6 +23,7 @@ p.name{
     font-weight: 700;
 }
 
+/* add font-sizes */
 h1{
     font-size: 0.9rem;
 }
@@ -38,6 +40,7 @@ p.credit, p.name{
     font-size: 0.8rem;
 }
 
+/* spacing and colors */
 blockquote{
     margin: 0;
 }
@@ -45,8 +48,12 @@ blockquote{
 .description{
     border-left: 8px solid white;
     margin-left: 0;
-    padding-left: 30px;
+    padding-left: 15.25px;
     margin-bottom: 40px;
+}
+
+h2{
+    margin-bottom: 32px;
 }
 
 figcaption, p.credit{
@@ -65,6 +72,11 @@ figcaption, p.credit{
     min-height: 50vh;
 }
 
+p.credit{
+    margin-bottom: 8px;
+}
+
+/* add responsiveness for > 700px screens */
 @media (min-width: 700px) {
     body{
         display: flex;
@@ -77,8 +89,16 @@ figcaption, p.credit{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-left: 32px;
     }
     .right-zone{
         width: 60vw;
+    }
+    .description{
+        padding-left: 16px;
+        margin-bottom: 40px;
+    }
+    p.credit{
+        margin-bottom: 16px;
     }
 }
