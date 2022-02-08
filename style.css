@@ -64,3 +64,21 @@ figcaption, p.credit{
     background-size: cover;
     min-height: 50vh;
 }
+
+@media (min-width: 700px) {
+    body{
+        display: flex;
+    }
+    .left-zone, .right-zone{
+        height: 100vh;
+    }
+    .left-zone{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .right-zone{
+        width: 60vw;
+    }
+}
