@@ -1,0 +1,104 @@
+/* initialize */
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+/* add font-weights */
+h1, h2{
+    font-weight: 900;
+}
+
+p{
+    font-weight: 500;
+}
+
+p.name{
+    font-weight: 700;
+}
+
+/* add font-sizes */
+h1{
+    font-size: 0.9rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+p.credit, p.name{
+    font-size: 0.8rem;
+}
+
+/* spacing and colors */
+blockquote{
+    margin: 0;
+}
+
+.description{
+    border-left: 8px solid white;
+    margin-left: 0;
+    padding-left: 15.25px;
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-bottom: 32px;
+}
+
+figcaption, p.credit{
+    color: #C2C7DA;
+}
+
+.left-zone{
+    background: #201B2D;
+    min-height: 50vh;
+    padding: 24px;
+}
+
+.right-zone{
+    background: url(assets/nasa-image.jpg);
+    background-size: cover;
+    min-height: 50vh;
+}
+
+p.credit{
+    margin-bottom: 8px;
+}
+
+/* add responsiveness for > 700px screens */
+@media (min-width: 700px) {
+    body{
+        display: flex;
+    }
+    .left-zone, .right-zone{
+        height: 100vh;
+    }
+    .left-zone{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 32px;
+    }
+    .right-zone{
+        width: 60vw;
+    }
+    .description{
+        padding-left: 16px;
+        margin-bottom: 40px;
+    }
+    p.credit{
+        margin-bottom: 16px;
+    }
+}
