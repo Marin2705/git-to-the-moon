@@ -7,6 +7,7 @@ body{
     margin: 0;
     font-family: 'Spartan', sans-serif;
     font-style: normal;
+    color: white;
 }
 
 h1, h2{
@@ -26,7 +27,7 @@ h1{
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 p{
@@ -35,4 +36,31 @@ p{
 
 p.credit, p.name{
     font-size: 0.8rem;
+}
+
+blockquote{
+    margin: 0;
+}
+
+.description{
+    border-left: 8px solid white;
+    margin-left: 0;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+figcaption, p.credit{
+    color: #C2C7DA;
+}
+
+.left-zone{
+    background: #201B2D;
+    min-height: 50vh;
+    padding: 24px;
+}
+
+.right-zone{
+    background: url(assets/nasa-image.jpg);
+    background-size: cover;
+    min-height: 50vh;
 }
