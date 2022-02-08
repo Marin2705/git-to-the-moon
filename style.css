@@ -5,4 +5,18 @@
 
 body{
     margin: 0;
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+}
+
+h1, h2{
+    font-weight: 900;
+}
+
+p{
+    font-weight: 500;
+}
+
+p.name{
+    font-weight: 700;
 }
